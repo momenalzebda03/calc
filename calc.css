@@ -1,0 +1,52 @@
+:root {
+    --color_white: white;
+}
+
+body {
+    background-color: #3B4664;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.div_flex .h2_calc {
+    color: var(--color_white);
+}
+
+.div_flex .div_output {
+    background-color: #252D44;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-radius: 6px;
+}
+
+.div_flex .div_output1 {
+    background-color: #181F32;
+    width: 420px;
+    height: 390px;
+    border-radius: 6px;
+}
+
+.div_flex .div_output .h1_number {
+    color: var(--color_white);
+}
+
+@media (max-width: 400px) and (min-width: 160px) {
+    .div_flex {
+        width: 100%;
+    }
+}
+
+@media (max-width: 160px) and (min-width: 0px) {
+    .div_flex .div_output {
+        width: 150px;
+    }
+
+    .div_flex .div_output1 {
+        width: 170px;
+    }
+}
