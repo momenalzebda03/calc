@@ -14,24 +14,23 @@ body {
     color: var(--color_white);
 }
 
-.div_flex .div_output {
+.div_flex .div_output1 {
+    background-color: #181F32;
+    width: 420px;
+    border-radius: 6px;
+    padding-bottom: 20px;
+}
+
+.div_flex .input_number {
     background-color: #252D44;
-    width: 400px;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 20px;
     border-radius: 6px;
-}
-
-.div_flex .div_output1 {
-    background-color: #181F32;
-    width: 420px;
-    border-radius: 6px;
-}
-
-.div_flex .div_output .h1_number {
+    width: 400px;
+    height: 60px;
+    border: none;
     color: var(--color_white);
 }
 
@@ -120,6 +119,10 @@ body {
     background-color: #3B4664;
 }
 
+::placeholder {
+    color: #ccc;
+}
+
 /* end main */
 /* start media */
 @media (max-width: 400px) and (min-width: 160px) {
@@ -129,31 +132,16 @@ body {
 }
 
 @media (max-width: 160px) and (min-width: 0px) {
-    .div_flex .div_output {
-        width: 150px;
-    }
-
     .div_flex .div_output1 {
-        width: 170px;
+        width: 100%;
     }
 
     .div_flex .div_output1 .div_flex1 {
-        display: flex;
-        gap: 0px;
+        padding-left: 250px;
     }
 
-    .div_flex .div_output1 .div_flex1 .button {
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-
-    .div_flex .div_output1 .div_flex1 .button1 {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .div_flex .div_output1 .div_flex2 {
-        flex-direction: column;
+    .div_flex .input_number {
+        width: 100%;
     }
 }
 
