@@ -20,10 +20,10 @@ var del = document.getElementById("del");
 var equals = document.getElementById("equals");
 // end button number
 // start button click
-plus.onclick = () => resart.value = input_number1.value + input_number2.value;
-minus.onclick = () => resart.value = input_number1.value - input_number2.value;
-hit.onclick = () => resart.value = input_number1.value * input_number2.value;
-portion.onclick = () => resart.value = input_number1.value / input_number2.value;
+plus.onclick = () => resart.value = +input_number1.value + +input_number2.value;
+minus.onclick = () => resart.value = +input_number1.value - +input_number2.value;
+hit.onclick = () => resart.value = +input_number1.value * +input_number2.value;
+portion.onclick = () => resart.value = +input_number1.value / +input_number2.value;
 input_number1.onclick = () => {
     zero.onclick = () => input_number1.value = "0" + input_number1.value;
     one.onclick = () => input_number1.value = "1" + input_number1.value;
