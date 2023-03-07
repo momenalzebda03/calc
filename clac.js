@@ -19,36 +19,30 @@ var nine = document.getElementById("9");
 var del = document.getElementById("del");
 var equals = document.getElementById("equals");
 // end button number
-// start button click
-plus.onclick = () => resart.value = +input_number1.value + +input_number2.value;
-minus.onclick = () => resart.value = +input_number1.value - +input_number2.value;
-hit.onclick = () => resart.value = +input_number1.value * +input_number2.value;
-portion.onclick = () => resart.value = +input_number1.value / +input_number2.value;
-input_number1.onclick = () => {
-    zero.onclick = () => input_number1.value = "0" + input_number1.value;
-    one.onclick = () => input_number1.value = "1" + input_number1.value;
-    tow.onclick = () => input_number1.value = "2" + input_number1.value;
-    three.onclick = () => input_number1.value = "3" + input_number1.value;
-    four.onclick = () => input_number1.value = "4" + input_number1.value;
-    five.onclick = () => input_number1.value = "5" + input_number1.value;
-    six.onclick = () => input_number1.value = "6" + input_number1.value;
-    seven.onclick = () => input_number1.value = "7" + input_number1.value;
-    eait.onclick = () => input_number1.value = "8" + input_number1.value;
-    nine.onclick = () => input_number1.value = "9" + input_number1.value;
-    del.onclick = () => input_number1.value = "";
-}
+// start click
+document.addEventListener("keydown", (ele) => {
+    ele.keyCode == 96 ? resart.value = "0" + resart.value : ele.keyCode == 46 ? resart.value = "" : ele.keyCode == 97 ? resart.value = "1" + resart.value :
+        ele.keyCode == 99 ? resart.value = "3" + resart.value : ele.keyCode == 100 ? resart.value = "4" + resart.value : ele.keyCode == 101 ? resart.value = "5"
+            + resart.value : ele.keyCode == 102 ? resart.value = "6" + resart.value : ele.keyCode == 103 ? resart.value = "7" + resart.value : ele.keyCode == 104
+                ? resart.value = "8" + resart.value : ele.keyCode == 105 ? resart.value = "9" + resart.value : ele.keyCode == 107 ? resart.value = "+" + resart.value
+                    : ele.keyCode == 109 ? resart.value = "-" + resart.value : ele.keyCode == 106 ? resart.value = "*" + resart.value : ele.keyCode == 111 ? resart.value = "/" + resart.value : "";
+});
 
-input_number2.onclick = () => {
-    zero.onclick = () => input_number2.value = "0" + input_number2.value;
-    one.onclick = () => input_number2.value = "1" + input_number2.value;
-    tow.onclick = () => input_number2.value = "2" + input_number2.value;
-    three.onclick = () => input_number2.value = "3" + input_number2.value;
-    four.onclick = () => input_number2.value = "4" + input_number2.value;
-    five.onclick = () => input_number2.value = "5" + input_number2.value;
-    six.onclick = () => input_number2.value = "6" + input_number2.value;
-    seven.onclick = () => input_number2.value = "7" + input_number2.value;
-    eait.onclick = () => input_number2.value = "8" + input_number2.value;
-    nine.onclick = () => input_number2.value = "9" + input_number2.value;
-    del.onclick = () => input_number2.value = "";
-}
+// end click
+// start button click
+zero.onclick = () => resart.value = "0" + resart.value;
+one.onclick = () => resart.value = "1" + resart.value;
+tow.onclick = () => resart.value = "2" + resart.value;
+three.onclick = () => resart.value = "3" + resart.value;
+four.onclick = () => resart.value = "4" + resart.value;
+five.onclick = () => resart.value = "5" + resart.value;
+six.onclick = () => resart.value = "6" + resart.value;
+seven.onclick = () => resart.value = "7" + resart.value;
+eait.onclick = () => resart.value = "8" + resart.value;
+nine.onclick = () => resart.value = "9" + resart.value;
+del.onclick = () => resart.value = "";
+plus.onclick = () => resart.value = "+" + resart.value;
+minus.onclick = () => resart.value = "-" + resart.value;
+portion.onclick = () => resart.value = "/" + resart.value;
+hit.onclick = () => resart.value = "*" + resart.value;
 // end button click
