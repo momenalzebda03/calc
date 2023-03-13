@@ -12,33 +12,34 @@
 <body>
     <!-- start main -->
     <div class="div_flex">
-        <h2 class="h2_calc">calc</h2>        
+        <h2 class="h2_calc">calc</h2>
         <br>
         <input class="input_number" id="resart" type="text" placeholder="resart">
         <br>
         <div class="div_output1">
             <div class="div_flex1">
-                <button class="button" id="7">7</button>
-                <button class="button" id="8">8</button>
-                <button class="button" id="9">9</button>
-                <button class="button" id="del">DEL</button>
+                <button class="button" onclick="my_number('7')">7</button>
+                <button class="button" onclick="my_number('8')">8</button>
+                <button class="button" onclick="my_number('9')">9</button>
+                <button class="button" onclick="my_del()">DEL</button>
             </div>
             <div class="div_flex1">
-                <button class="button" id="4">4</button>
-                <button class="button" id="5">5</button>
-                <button class="button" id="6">6</button>
-                <button class="plus button" id="plus">+</button>
+                <button class="button" onclick="my_number('4')">4</button>
+                <button class="button" onclick="my_number('5')">5</button>
+                <button class="button" onclick="my_number('6')">6</button>
+                <button class="button" onclick="my_number('+')">+</button>
             </div>
             <div class="div_flex1">
-                <button class="button" id="1">1</button>
-                <button class="button" id="2">2</button>
-                <button class="button" id="3">3</button>
-                <button class="plus button" id="minus">-</button>
+                <button class="button" onclick="my_number('1')">1</button>
+                <button class="button" onclick="my_number('2')">2</button>
+                <button class="button" onclick="my_number('3')">3</button>
+                <button class="button" onclick="my_number('-')">-</button>
             </div>
             <div class="div_flex1">
-                <button class="button1" id="0">0</button>
-                <button class="button1" id="portion">/</button>
-                <button class="plus button" id="hit">*</button>
+                <button class="button" onclick="my_number('0')">0</button>
+                <button class="button" onclick="my_number('/')">/</button>
+                <button class="button" onclick="my_number('*')">*</button>
+                <button class="button" onclick="my_resault()">=</button>
             </div>
         </div>
     </div>

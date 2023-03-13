@@ -26,7 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 20px;
+    padding-left: 21px;
     border-radius: 6px;
     width: 400px;
     height: 60px;
@@ -41,41 +41,20 @@ body {
     padding-left: 20px;
 }
 
-.div_flex .div_output1 .div_flex1 .button,
-.div_flex .div_output1 .div_flex1 .button1 {
+.div_flex .div_output1 .div_flex1 .button {
     font-size: 35px;
     border-radius: 6px;
     box-shadow: 0px 2px #888888;
     color: #3B4664;
+    width: 22%;
     background-color: rgb(230, 230, 230);
     transition: 0.3s;
     cursor: pointer;
 }
 
-.div_flex .div_output1 .div_flex1 .button {
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.div_flex .div_output1 .div_flex1 .button1 {
-    padding-left: 28px;
-    padding-right: 28px;
-}
-
-.div_flex .div_output1 .div_flex1 .button:hover,
-.div_flex .div_output1 .div_flex1 #del:hover,
-.div_flex .div_output1 .div_flex1 .button1:hover {
+.div_flex .div_output1 .div_flex1 .button:hover {
     background-color: green;
     color: var(--color_white);
-}
-
-.div_flex .div_output1 .div_flex1 #del {
-    color: var(--color_white);
-    background-color: #3B4664;
-}
-
-.div_flex .div_output1 .div_flex1 .plus {
-    width: 125px;
 }
 
 .div_flex .div_output1 .div_flex2 {
@@ -93,30 +72,6 @@ body {
     border-radius: 6px;
     font-weight: bold;
     font-size: 20px;
-}
-
-.div_flex .div_output1 .div_flex2 #resart,
-.div_flex .div_output1 .div_flex2 #equals {
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.div_flex .div_output1 .div_flex2 #resart {
-    background-color: #3B4664;
-    color: var(--color_white);
-}
-
-.div_flex .div_output1 .div_flex2 #resart:hover {
-    background-color: #D13F30;
-}
-
-.div_flex .div_output1 .div_flex2 #equals {
-    background-color: #D13F30;
-    color: var(--color_white);
-}
-
-.div_flex .div_output1 .div_flex2 #equals:hover {
-    background-color: #3B4664;
 }
 
 ::placeholder {
